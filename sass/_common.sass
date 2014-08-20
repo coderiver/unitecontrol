@@ -34,11 +34,11 @@
 //     @each $s in a,b,c
 // 	    	#{$s}
 //				display: none
-// ## fonts 
+// ## fonts
 // Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
+// +font(book, cytiapro-black-webfont)
 // =book
-// 	font-family: "book", Arial, sans-serif 
+// 	font-family: "book", Arial, sans-serif
 // insert pics into css
 // div
 // 	+pic("blabla.png")
@@ -47,18 +47,175 @@
 // p
 // 	+jpg(bla)
 
+$blue: #0096ff
+$green: #00b200
+$text: #666
+
++font("HelveticaNeueCyr-Light", HelveticaNeueCyr-Light)
+=light
+	font-family: "HelveticaNeueCyr-Light", Arial, sans-serif
+	font-weight: normal
+
++font("UC-Icons", UC-Icons)
+=uc
+	font-family: "UC-Icons"
+	font-weight: normal
+
 
 body
-	font-family: Arial, sans-serif 
-	font-size: 12px 
+	+light
+	font-size: 12px
 	line-height: 1.4
+	background: #FFF
+
+a
+	color: $blue
+	text-decoration: none
+	&:hover
+		text-decoration: underline
 
 
-// common blocks      
+.header
+	font-size: 0
+	text-align: right
+	padding: 21px 0
+	+clr
+
+.logo
+	display: block
+	float: left
+	margin-right: 35px
+	font-size: 0
+	text-decoration: none
+	color: #000
+	text-decoration: none
+	+fs(26)
+	&:hover
+		color: #000
+		text-decoration: none
+	&:before
+		content: ""
+		+svg(logo, 48, 48)
+		vertical-align: middle
+	span
+		vertical-align: middle
+		margin-left: 15px
+	&.logo_footer
+		color: $text
+		+fs(24)
 
 
+.nav
+	display: inline-block
+	vertical-align: middle
+	line-height: 48px
+	color: $blue
+	li
+		display: inline-block
+		vertical-align: top
+		margin-right: 30px
+		+fs(16)
+		+r(1200)
+			margin-right: 15px
 
+.lang
+	display: inline-block
+	vertical-align: middle
+	margin-right: 30px
+	+fs(16)
+	color: #666
+	+r(1200)
+		margin-right: 15px
+	a
+		color: #666
+		&.is-active
+			color: $blue
 
+.button
+	display: inline-block
+	+fs(18)
+	background: $green
+	color: #fff
+	text-align: center
+	line-height: 34px
+	min-width: 167px
+	padding: 0 30px
+	border-bottom: 2px solid #009900
+	&:hover
+		background: #008900
+		border-color: #005c00
+		color: #fff
+		text-decoration: none
+
+.promo
+	background-position: 100% 0
+	background-repeat: no-repeat
+	background-color: #5F747D
+	height: 460px
+	position: relative
+	overflow: hidden
+
+.promo__right
+	position: absolute
+	top: 34px
+	right: 0
+
+.promo__title
+	margin: 80px 0 60px
+	+fs(48)
+	color: #FFF
+	&.promo__title_sub
+		margin-top: 60px
+		+fs(24)
+		line-height: 1.3
+
+.section
+	padding: 70px 0
+	&.section_gray
+		background: #e8ebec
+
+.title
+	+fs(42)
+	// margin-bottom: 45px
+
+.b-text
+	margin-top: 45px
+	p
+		+fs(18)
+		color: $text
+
+.b-text__title
+	display: block
+	+fs(24)
+	margin-bottom: 10px
+
+.how-it-works
+	padding-bottom: 33%
+	background-image: url('../img/svg/how-it-works1.svg')
+	-webkit-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+	+uc
+
+.footer
+	padding: 35px 0
+
+.footer__email
+	display: inline-block
+	vertical-align: middle
+	+fs(24)
+	position: relative
+	top: 5px
+
+.footer__tel
+	font-size: 0
+	a
+		color: $text
+		text-decoration: none
+		+fs(22)
+	li
+		display: inline-block
+		width: 50%
 
 
 
