@@ -11,34 +11,42 @@
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
 <body>
-<!-- BEGIN  header container -->
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<!-- BEGIN header -->
-			<header class="header">
+<!-- BEGIN header -->
+<header class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
 				<a href="#" class="logo"><span>Unite Control</span></a>
-				<nav class="nav">
-					<ul>
-						<li><a href="#">Решения</a></li>
+				<nav class="nav js-menu-to-show">
+					<ul class="nav__list js-nav">
+						<li>
+							<a href="#">Решения</a>
+							<ul class="nav__sub js-subnav">
+								<li><a href="#">subitem</a></li>
+								<li><a href="#">subitem</a></li>
+								<li><a href="#">subitem</a></li>
+								<li><a href="#">subitem</a></li>
+								<li><a href="#">subitem</a></li>
+							</ul>
+						</li>
 						<li><a href="#">Преимущества</a></li>
 						<li><a href="#">Апп</a></li>
 						<li><a href="#">Устройства</a></li>
 						<li><a href="#">Контакты</a></li>
 						<li><a href="#">Блог</a></li>
 					</ul>
+					<ul class="lang">
+						<a href="#" class="is-active">рус</a> /
+						<a href="#">eng</a>
+					</ul>
+					<a href="#" class="button button_header">Предзаказ</a>
 				</nav>
-				<div class="lang">
-					<a href="#" class="is-active">рус</a> /
-					<a href="#">eng</a>
-				</div>
-				<a href="#" class="button">Предзаказ</a>
-			</header>
-			<!-- END header -->
+				<div class="menu-btn js-show-menu"></div>
+			</div>
 		</div>
 	</div>
-</div>
-<!-- END header container -->
+</header>
+<!-- END header -->
 
 <!-- BEGIN promo -->
 <div class="promo" style="background-image: url('img/promo.jpg')">
@@ -78,6 +86,7 @@
 				<p><a href="#">UC Building</a> позволяет мониторить потребление ресурсов конечными потребителями, выставлять счета к оплате, принимать платежи, экономить ресурсы и повышать уровень сервиса.</p>
 				<a href="#" class="button">Скачать презентацию</a>
 			</div>
+
 		</div>
 	</div>
 </div>
@@ -87,8 +96,11 @@
 <div class="section">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<div class="how-it-works"></div>
+			<div class="col-md-12 visible-lg visible-md visible-sm">
+				<div class="how-it-works"><img src="img/svg/how-it-works.svg" alt="Как всё это работает?"></div>
+			</div>
+			<div class="col-xs-12 visible-xs">
+				<div class="how-it-works"><img src="img/svg/how-it-works-vert.svg" alt="Как всё это работает?"></div>
 			</div>
 		</div>
 	</div>
@@ -160,23 +172,27 @@
 </div>
 <!-- END section -->
 
-<div class="container">
-	<div class="row footer">
-		<div class="col-md-4">
-			<a href="#" class="logo logo_footer"><span>&copy Unite Control 2013</span></a>
-		</div>
-		<div class="col-md-4">
-			<a href="mailt:mail@unitecontrol.com" class="footer__email">mail@unitecontrol.com</a>
-		</div>
-		<div class="col-md-4">
-			<ul class="footer__tel">
-				<li><a href="tel:+79118503216">+7 911 850 3216</a></li>
-				<li><a href="tel:+74012536128">+7 401 253 6128</a></li>
-				<li><a href="tel:+74012536128">+7 401 253 6128</a></li>
-			</ul>
+<!-- BEGIN footer -->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<a href="#" class="logo logo_footer"><span>&copy Unite Control 2013</span></a>
+			</div>
+			<div class="col-md-4">
+				<a href="mailt:mail@unitecontrol.com" class="footer__email">mail@unitecontrol.com</a>
+			</div>
+			<div class="col-md-4">
+				<ul class="footer__tel">
+					<li><a href="tel:+79118503216">+7 911 850 3216</a></li>
+					<li><a href="tel:+74012536128">+7 401 253 6128</a></li>
+					<li><a href="tel:+74012536128">+7 401 253 6128</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
-</div>
+</footer>
+<!-- END footer -->
 
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>

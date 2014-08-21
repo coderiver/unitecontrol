@@ -61,35 +61,45 @@ $text: #666
 	font-family: "UC-Icons"
 	font-weight: normal
 
+html
+	font-size: 62.5%
 
 body
 	+light
 	font-size: 12px
-	line-height: 1.4
+	line-height: 1.2
 	background: #FFF
 
 a
 	color: $blue
 	text-decoration: none
 	&:hover
-		text-decoration: underline
-
+		text-decoration: none
 
 .header
 	font-size: 0
 	text-align: right
-	padding: 21px 0
+	padding: 21px 0 18px
+	position: relative
+	+box
 	+clr
+	+r(767)
+		padding: 15px 0
 
 .logo
 	display: block
 	float: left
-	margin-right: 35px
+	// margin-right: 35px
 	font-size: 0
 	text-decoration: none
 	color: #000
 	text-decoration: none
+	text-align: left
 	+fs(26)
+	+r(991)
+		float: none
+	+r(767)
+		+fs(18)
 	&:hover
 		color: #000
 		text-decoration: none
@@ -101,8 +111,26 @@ a
 		vertical-align: middle
 		margin-left: 15px
 	&.logo_footer
+		float: none
 		color: $text
+		margin-right: 0
 		+fs(24)
+		+r(1200)
+			+fs(20)
+
+.menu-btn
+	+svg(menu, 48, 48)
+	vertical-align: middle
+	cursor: pointer
+	display: none
+	position: absolute
+	top: 0
+	right: 15px
+	+transition(all 0.2s linear)
+	&.is-active
+		+svg(menu-active, 48, 48)
+	+r(767)
+		display: inline-block
 
 
 .nav
@@ -110,13 +138,55 @@ a
 	vertical-align: middle
 	line-height: 48px
 	color: $blue
+	text-align: left
+	+r(767)
+		display: none
+		width: 100%
+		padding: 0 15px
+		margin-top: 15px
+		position: absolute
+		left: 0
+		top: 100%
+		z-index: 10
+		background: #E8EBEC
+		line-height: 2.5
+	+rmin(768)
+		display: inline-block !important
+
+.nav__list
+	display: inline-block
+	vertical-align: middle
 	li
 		display: inline-block
 		vertical-align: top
 		margin-right: 30px
+		position: relative
 		+fs(16)
 		+r(1200)
 			margin-right: 15px
+	+r(767)
+		display: block
+		li
+			display: block
+			margin-right: 0
+
+.nav__sub
+	position: absolute
+	z-index: 10
+	top: 100%
+	left: 0
+	background: #FFF
+	padding: 0 20px
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.5)
+	li
+		display: block
+		margin-right: 0
+	+r(767)
+		position: static
+		background: #D8D8D8
+		margin: 0 -15px
+		padding: 0 30px
+		box-shadow: none
 
 .lang
 	display: inline-block
@@ -130,6 +200,9 @@ a
 		color: #666
 		&.is-active
 			color: $blue
+	+r(767)
+		display: block
+		margin-right: 0
 
 .button
 	display: inline-block
@@ -138,14 +211,23 @@ a
 	color: #fff
 	text-align: center
 	line-height: 34px
-	min-width: 167px
 	padding: 0 30px
 	border-bottom: 2px solid #009900
+	+box
 	&:hover
 		background: #008900
 		border-color: #005c00
 		color: #fff
 		text-decoration: none
+	&.button_header
+		min-width: 167px
+		+r(1200)
+			min-width: 50px
+			padding: 0 15px
+		+r(767)
+			display: block
+			width: 100%
+			margin: 20px 0 30px
 
 .promo
 	background-position: 100% 0
@@ -157,17 +239,32 @@ a
 
 .promo__right
 	position: absolute
-	top: 34px
+	z-index: 1
+	top: 0
 	right: 0
+	opacity: 1
+	+transition(0.2s linear)
+	+r(720)
+		+transform(translateY(100%))
+		opacity: 0
+		visibility: 0
 
 .promo__title
-	margin: 80px 0 60px
+	position: relative
+	z-index: 2
+	padding: 80px 0 60px
 	+fs(48)
 	color: #FFF
+	+r(991)
+		+fs(40)
+	+r(767)
+		+fs(32)
 	&.promo__title_sub
-		margin-top: 60px
+		padding-top: 0
 		+fs(24)
 		line-height: 1.3
+		+r(991)
+			+fs(22)
 
 .section
 	padding: 70px 0
@@ -176,7 +273,8 @@ a
 
 .title
 	+fs(42)
-	// margin-bottom: 45px
+	+r(767)
+		+fs(26)
 
 .b-text
 	margin-top: 45px
@@ -190,34 +288,80 @@ a
 	margin-bottom: 10px
 
 .how-it-works
-	padding-bottom: 33%
-	background-image: url('../img/svg/how-it-works1.svg')
-	-webkit-background-size: cover
-	-o-background-size: cover
-	background-size: cover
-	+uc
 
 .footer
-	padding: 35px 0
+	padding: 32px 0
+	border-top: 1px solid #C9CCCD
+	.col-md-4
+		line-height: 60px
 
 .footer__email
-	display: inline-block
-	vertical-align: middle
 	+fs(24)
-	position: relative
-	top: 5px
+	+r(1200)
+		+fs(20)
 
 .footer__tel
+	display: inline-block
+	vertical-align: middle
 	font-size: 0
+	line-height: 1.4
 	a
 		color: $text
 		text-decoration: none
 		+fs(22)
+		+r(1200)
+			+fs(18)
 	li
 		display: inline-block
 		width: 50%
+		+r(991)
+			display: block
+			width: 100%
 
+//------------------------------------------------------------------------------
+//
+//    #devices page
+//
+//------------------------------------------------------------------------------
 
+.devices
+	margin-top: 60px
+
+.devices__title
+	+fs(42)
+	margin-bottom: 35px
+
+.devices__list
+	+fs(20)
+	margin-bottom: 80px
+	li
+		margin-bottom: 22px
+	a.is-active, li.is-active a
+		color: #000
+
+.devices__item
+	margin-bottom: 80px
+
+.devices__item-pic
+	margin: 0 auto
+	max-width: 254px
+	margin-bottom: 30px
+	img
+		max-width: 100%
+
+.devices__item-title
+	+fs(24)
+	font-weight: normal
+
+.devices__item-about
+	+fs(18)
+	line-height: 1.2
+	margin: 15px 0
+	font-weight: normal
+
+.devices__item-price
+	+fs(24)
+	color: #000
 
 
 
