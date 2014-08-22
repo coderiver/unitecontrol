@@ -3,8 +3,16 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-<g>
-	<rect x="0" width="48" height="48"/>
+<font horiz-adv-x="1000">
+<!-- &quot;Helvetica Neue&quot; is a trademark of Heidelberger Druckmaschinen AG, which may be registered in certain jurisdictions, exclusivly licensed through Linotype Library GmbH, a wholly owned subsidiary of Heidelberger Druckmaschinen AG. -->
+<font-face font-family="HelveticaNeue" units-per-em="1000" underline-position="-100" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="500" d="M409,666l-307,0l0,-619l307,0M460,712l0,-711l-409,0l0,711z"/>
+<glyph unicode="C" horiz-adv-x="722" d="M580,499l95,0C670,537 658,571 641,600C624,629 602,653 576,672C550,691 520,706 487,716C454,726 418,731 381,731C326,731 278,721 236,702C193,682 158,655 130,621C101,587 80,547 65,502C50,456 43,407 43,355C43,303 50,254 64,209C77,164 98,124 125,91C152,58 187,32 228,13C269,-6 318,-16 373,-16C464,-16 536,9 589,59C642,109 673,179 682,269l-95,0C585,240 579,212 569,187C559,162 545,140 528,122C510,103 489,89 465,79C440,68 412,63 381,63C338,63 302,71 271,87C240,103 215,125 196,152C176,179 161,210 152,247C143,283 138,321 138,362C138,399 143,435 152,470C161,505 176,536 196,563C215,590 240,611 271,627C301,643 337,651 380,651C430,651 473,638 510,613C546,588 569,550 580,499z"/>
+<glyph unicode="U" horiz-adv-x="722" d="M648,258l0,456l-95,0l0,-456C553,194 537,146 506,113C474,80 428,63 367,63C303,63 254,80 220,113C186,146 169,194 169,258l0,456l-95,0l0,-456C74,163 100,93 152,50C203,6 275,-16 367,-16C457,-16 526,7 575,53C624,98 648,167 648,258z"/>
+</font>
+
+	<g>
+	<rect width="48" height="48"/>
 	<text transform="matrix(1 0 0 1 6 33)" fill="#FFFFFF" font-family="'HelveticaNeue'" font-size="24">UC</text>
 </g>
 </svg>

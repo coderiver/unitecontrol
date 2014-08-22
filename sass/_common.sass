@@ -61,6 +61,11 @@ $text: #666
 	font-family: "UC-Icons"
 	font-weight: normal
 
++font("HelveticaNeueLTW1G-Lt", HelveticaNeueLTW1G-Lt)
+=helveticaTG
+	font-family: "HelveticaNeueLTW1G-Lt", Arial
+	font-weight: normal
+
 html
 	font-size: 62.5%
 
@@ -233,7 +238,7 @@ a
 	background-position: 100% 0
 	background-repeat: no-repeat
 	background-color: #5F747D
-	height: 460px
+	min-height: 460px
 	position: relative
 	overflow: hidden
 
@@ -266,10 +271,12 @@ a
 		+r(991)
 			+fs(22)
 
-.section
+.wrap
 	padding: 70px 0
-	&.section_gray
+	&.wrap_gray
 		background: #e8ebec
+	&.wrap_lead
+		background: #5F747D
 
 .title
 	+fs(42)
@@ -363,8 +370,62 @@ a
 	+fs(24)
 	color: #000
 
+//------------------------------------------------------------------------------
+//
+//    #product-card page
+//
+//------------------------------------------------------------------------------
 
+.product__title
+	+helveticaTG
+	+fs(48)
+	color: #FFF
+	margin-top: 30px
+	&.product__title_sub
+		margin: 30px 0 45px
+		+fs(24)
 
+.product__price
+	+helveticaTG
+	display: block
+	+fs(36)
+	color: #FFF
+	font-weight: 100
+
+.product__pic
+	+r(991)
+		margin: 50px 0 -36px
+
+.product__about
+	p
+		+fs(18)
+		color: #656565
+		margin: 30px 0
+
+.product__spec-table
+	margin-right: 50px
+	+r(1200)
+		margin-right: 0
+	.title
+		margin-bottom: 35px
+	.tr
+		font-size: 0
+	.td
+		display: inline-block
+		vertical-align: top
+		width: 60%
+		+fs(14)
+		line-height: 1.215
+		color: #656565
+		padding: 16px 20px 16px 0
+		&:first-child
+			width: 40%
+			color: #000
+		&.separator
+			width: 100%
+			div
+				height: 1px
+				background: #999
 
 
 
