@@ -51,20 +51,6 @@ $blue: #0096ff
 $green: #00b200
 $text: #666
 
-// +font("HelveticaNeueCyr-Light", HelveticaNeueCyr-Light)
-// =light
-// 	font-family: "HelveticaNeueCyr-Light", Arial, sans-serif
-// 	font-weight: normal
-
-// +font("UC-Icons", UC-Icons)
-// =uc
-// 	font-family: "UC-Icons"
-// 	font-weight: normal
-
-// +font("HelveticaNeueCyr-UltraLight", HelveticaNeueCyr-UltraLight)
-// =ultra
-// 	font-family: "HelveticaNeueCyr-UltraLight", Arial
-// 	font-weight: normal
 
 +font("HelveticaNeueLTW1G-Lt", HelveticaNeueLTW1G-Lt)
 =LTWlight
@@ -97,22 +83,6 @@ a
 	text-decoration: none
 	&:hover
 		text-decoration: none
-
-// +r(767)
-// 	.row:last-of-type
-// 		.col-md-1:not(:last-child),
-// 		.col-md-2:not(:last-child),
-// 		.col-md-3:not(:last-child),
-// 		.col-md-4:not(:last-child),
-// 		.col-md-5:not(:last-child),
-// 		.col-md-6:not(:last-child),
-// 		.col-md-7:not(:last-child),
-// 		.col-md-8:not(:last-child),
-// 		.col-md-9:not(:last-child),
-// 		.col-md-10:not(:last-child),
-// 		.col-md-11:not(:last-child),
-// 		.col-md-12:not(:last-child)
-// 			margin-bottom: 35px
 
 .col-margin-bottom
 	+r(991)
@@ -194,7 +164,7 @@ a
 		top: 100%
 		z-index: 10
 		background: #fff
-		line-height: 2.5
+		line-height: 1.2
 	+rmin(992)
 		display: inline-block !important
 
@@ -213,7 +183,7 @@ a
 		display: block
 		li
 			display: block
-			margin-right: 0
+			margin: 0 0 15px
 
 .nav__sub
 	position: absolute
@@ -267,6 +237,7 @@ a
 	i
 		+fs(27)
 		+entypo
+		line-height: 1
 
 
 .button
@@ -310,6 +281,8 @@ a
 		min-height: 1px
 
 .promo__right
+	width: 400px
+	height: 460px
 	position: absolute
 	z-index: 1
 	top: 0
@@ -319,9 +292,13 @@ a
 	+r(991)
 		right: 0
 	+r(767)
-		+transform(translateY(100%))
-		opacity: 0
-		visibility: 0
+		// +transform(translateY(100%))
+		// opacity: 0
+		// visibility: 0
+		display: none
+	img
+		display: block
+		max-width: 100%
 
 .promo__title
 	position: relative
@@ -353,8 +330,7 @@ a
 
 .title
 	+fs(42)
-	&.title_margin
-		margin-bottom: 35px
+	margin-bottom: 35px
 	+r(767)
 		+fs(28)
 
@@ -446,6 +422,8 @@ a
 .devices__list
 	+fs(20)
 	margin-bottom: 80px
+	+r(767)
+		+fs(18)
 	li
 		margin-bottom: 22px
 	a.is-active, li.is-active a
@@ -453,6 +431,8 @@ a
 
 .devices__item
 	margin-bottom: 80px
+	+r(767)
+		margin-bottom: 50px
 
 .devices__item-pic
 	margin: 0 auto
@@ -460,20 +440,28 @@ a
 	margin-bottom: 30px
 	img
 		max-width: 100%
+	+r(767)
+		margin-bottom: 15px
 
 .devices__item-title
 	+fs(24)
 	font-weight: normal
+	+r(767)
+		+fs(20)
 
 .devices__item-about
 	+fs(18)
 	line-height: 1.2
 	margin: 15px 0
 	font-weight: normal
+	+r(767)
+		+fs(16)
 
 .devices__item-price
 	+fs(24)
 	color: #000
+	+r(767)
+		+fs(20)
 
 //------------------------------------------------------------------------------
 //
@@ -520,6 +508,8 @@ a
 		+fs(18)
 		color: #656565
 		margin: 30px 0
+		&:first-child
+			margin-top: 0
 		&:last-child
 			margin-bottom: 0
 		+r(767)
