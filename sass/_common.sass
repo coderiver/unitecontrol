@@ -51,27 +51,44 @@ $blue: #0096ff
 $green: #00b200
 $text: #666
 
-+font("HelveticaNeueCyr-Light", HelveticaNeueCyr-Light)
-=light
-	font-family: "HelveticaNeueCyr-Light", Arial, sans-serif
-	font-weight: normal
+// +font("HelveticaNeueCyr-Light", HelveticaNeueCyr-Light)
+// =light
+// 	font-family: "HelveticaNeueCyr-Light", Arial, sans-serif
+// 	font-weight: normal
 
-+font("UC-Icons", UC-Icons)
-=uc
-	font-family: "UC-Icons"
-	font-weight: normal
+// +font("UC-Icons", UC-Icons)
+// =uc
+// 	font-family: "UC-Icons"
+// 	font-weight: normal
+
+// +font("HelveticaNeueCyr-UltraLight", HelveticaNeueCyr-UltraLight)
+// =ultra
+// 	font-family: "HelveticaNeueCyr-UltraLight", Arial
+// 	font-weight: normal
 
 +font("HelveticaNeueLTW1G-Lt", HelveticaNeueLTW1G-Lt)
-=helveticaTG
+=LTWlight
 	font-family: "HelveticaNeueLTW1G-Lt", Arial
 	font-weight: normal
+
++font("HelveticaNeueLTW1G-UltLt", HelveticaNeueLTW1G-UltLt)
+=LTWultra
+	font-family: "HelveticaNeueLTW1G-UltLt", Arial
+	font-weight: normal
+
++font("Entypo", Entypo)
+=entypo
+	font-family: "Entypo"
+	font-weight: normal
+	font-style: normal
+
 
 html
 	font-size: 62.5%
 
 body
-	+light
-	font-size: 12px
+	+LTWlight
+	font-size: 16px
 	line-height: 1.2
 	background: #FFF
 
@@ -81,15 +98,36 @@ a
 	&:hover
 		text-decoration: none
 
+// +r(767)
+// 	.row:last-of-type
+// 		.col-md-1:not(:last-child),
+// 		.col-md-2:not(:last-child),
+// 		.col-md-3:not(:last-child),
+// 		.col-md-4:not(:last-child),
+// 		.col-md-5:not(:last-child),
+// 		.col-md-6:not(:last-child),
+// 		.col-md-7:not(:last-child),
+// 		.col-md-8:not(:last-child),
+// 		.col-md-9:not(:last-child),
+// 		.col-md-10:not(:last-child),
+// 		.col-md-11:not(:last-child),
+// 		.col-md-12:not(:last-child)
+// 			margin-bottom: 35px
+
+.col-margin-bottom
+	+r(991)
+		margin-bottom: 35px
+
 .header
 	font-size: 0
 	text-align: right
 	padding: 21px 0 18px
-	position: relative
 	+box
 	+clr
-	+r(767)
-		padding: 15px 0
+	+r(991)
+		padding: 26px 0
+	.container
+		position: relative
 
 .logo
 	display: block
@@ -100,11 +138,10 @@ a
 	color: #000
 	text-decoration: none
 	text-align: left
-	+fs(26)
+	+fs(23)
 	+r(991)
 		float: none
-	+r(767)
-		+fs(18)
+		+fs(17)
 	&:hover
 		color: #000
 		text-decoration: none
@@ -112,6 +149,9 @@ a
 		content: ""
 		+svg(logo, 48, 48)
 		vertical-align: middle
+		+r(991)
+			width: 36px
+			height: 36px
 	span
 		vertical-align: middle
 		margin-left: 15px
@@ -124,7 +164,7 @@ a
 			+fs(20)
 
 .menu-btn
-	+svg(menu, 48, 48)
+	+svg(menu, 36, 36)
 	vertical-align: middle
 	cursor: pointer
 	display: none
@@ -133,8 +173,8 @@ a
 	right: 15px
 	+transition(all 0.2s linear)
 	&.is-active
-		+svg(menu-active, 48, 48)
-	+r(767)
+		+svg(menu-active, 36, 36)
+	+r(991)
 		display: inline-block
 
 
@@ -144,18 +184,18 @@ a
 	line-height: 48px
 	color: $blue
 	text-align: left
-	+r(767)
+	+r(991)
 		display: none
 		width: 100%
-		padding: 0 15px
-		margin-top: 15px
+		padding: 15px
+		margin-top: 26px
 		position: absolute
 		left: 0
 		top: 100%
 		z-index: 10
-		background: #E8EBEC
+		background: #fff
 		line-height: 2.5
-	+rmin(768)
+	+rmin(992)
 		display: inline-block !important
 
 .nav__list
@@ -164,12 +204,12 @@ a
 	li
 		display: inline-block
 		vertical-align: top
-		margin-right: 30px
+		margin-right: 40px
 		position: relative
-		+fs(16)
+		+fs(18)
 		+r(1200)
 			margin-right: 15px
-	+r(767)
+	+r(991)
 		display: block
 		li
 			display: block
@@ -186,7 +226,7 @@ a
 	li
 		display: block
 		margin-right: 0
-	+r(767)
+	+r(991)
 		position: static
 		background: #D8D8D8
 		margin: 0 -15px
@@ -196,18 +236,38 @@ a
 .lang
 	display: inline-block
 	vertical-align: middle
-	margin-right: 30px
-	+fs(16)
-	color: #666
+	margin-right: 40px
+	+fs(18)
+	text-transform: uppercase
+	// color: #666
 	+r(1200)
 		margin-right: 15px
 	a
 		color: #666
 		&.is-active
 			color: $blue
-	+r(767)
+	+r(991)
 		display: block
 		margin-right: 0
+	&:before
+		content: ""
+		display: inline-block
+		margin-right: 10px
+		position: relative
+		top: 2px
+	&.lang_ru
+		&:before
+			+svg(lang-ru, 26, 18)
+	&.lang_en
+		&:before
+			+svg(lang-en, 26, 18)
+	&.lang_pl
+		&:before
+			+svg(lang-pl, 26, 18)
+	i
+		+fs(27)
+		+entypo
+
 
 .button
 	display: inline-block
@@ -217,6 +277,7 @@ a
 	text-align: center
 	line-height: 34px
 	padding: 0 30px
+	// margin-top: 45px
 	border-bottom: 2px solid #009900
 	+box
 	&:hover
@@ -226,30 +287,38 @@ a
 		text-decoration: none
 	&.button_header
 		min-width: 167px
+		position: relative
+		top: 2px
+		margin-top: 0
 		+r(1200)
 			min-width: 50px
 			padding: 0 15px
-		+r(767)
+		+r(991)
 			display: block
+			position: static
 			width: 100%
-			margin: 20px 0 30px
+			margin: 20px 0 40px
 
 .promo
-	background-position: 100% 0
-	background-repeat: no-repeat
-	background-color: #5F747D
+	background: #5F747D url('../img/promo.jpg') 100% 0 no-repeat
 	min-height: 460px
 	position: relative
 	overflow: hidden
+	+transition(0.2s linear)
+	+r(767)
+		background: #5F747D
+		min-height: 1px
 
 .promo__right
 	position: absolute
 	z-index: 1
 	top: 0
-	right: 0
+	right: 70px
 	opacity: 1
 	+transition(0.2s linear)
-	+r(720)
+	+r(991)
+		right: 0
+	+r(767)
 		+transform(translateY(100%))
 		opacity: 0
 		visibility: 0
@@ -257,22 +326,26 @@ a
 .promo__title
 	position: relative
 	z-index: 2
-	padding: 80px 0 60px
+	padding: 125px 0 18px
 	+fs(48)
 	color: #FFF
+	line-height: 1.22
 	+r(991)
 		+fs(40)
 	+r(767)
 		+fs(32)
+		padding-top: 65px
 	&.promo__title_sub
+		+LTWultra
 		padding-top: 0
 		+fs(24)
-		line-height: 1.3
 		+r(991)
-			+fs(22)
+			+fs(20)
+		+r(767)
+			padding-bottom: 65px
 
 .wrap
-	padding: 70px 0
+	padding: 65px 0
 	&.wrap_gray
 		background: #e8ebec
 	&.wrap_lead
@@ -280,32 +353,62 @@ a
 
 .title
 	+fs(42)
+	&.title_margin
+		margin-bottom: 35px
 	+r(767)
-		+fs(26)
+		+fs(28)
 
 .b-text
-	margin-top: 45px
+	// margin-top: 35px
 	p
 		+fs(18)
 		color: $text
+		+r(767)
+			+fs(16)
 
 .b-text__title
 	display: block
 	+fs(24)
-	margin-bottom: 10px
+	margin-bottom: 15px
+	+r(767)
+		+fs(21)
 
 .how-it-works
 
+.advantages
+	padding-bottom: 0
+	+r(767)
+		padding-bottom: 30px
+	.b-text
+		margin-bottom: 70px
+		+r(767)
+			margin-bottom: 35px
+
 .footer
-	padding: 32px 0
-	border-top: 1px solid #C9CCCD
+	padding: 65px 0
+	// border-top: 1px solid #C9CCCD
 	.col-md-4
 		line-height: 60px
+		+r(991)
+			line-height: inherit
+			margin-bottom: 20px
+			&:last-child
+				margin-bottom: 0
+	&.footer_gray
+		background-color: #E8EBEC
+
+.copy
+	color: #656565
+	+fs(22)
+	+r(767)
+		+fs(16)
 
 .footer__email
-	+fs(24)
+	+fs(22)
 	+r(1200)
 		+fs(20)
+	+r(767)
+		+fs(16)
 
 .footer__tel
 	display: inline-block
@@ -318,6 +421,8 @@ a
 		+fs(22)
 		+r(1200)
 			+fs(18)
+		+r(767)
+			+fs(16)
 	li
 		display: inline-block
 		width: 50%
@@ -376,38 +481,54 @@ a
 //
 //------------------------------------------------------------------------------
 
+.product
+
 .product__title
-	+helveticaTG
+	+LTWultra
 	+fs(48)
 	color: #FFF
-	margin-top: 30px
+	&.product__title_margin-top
+		margin-top: 30px
+		+r(991)
+			margin-top: 0
+	+r(767)
+		+fs(32)
+		margin-top: 0
 	&.product__title_sub
-		margin: 30px 0 45px
+		margin-top: 30px
 		+fs(24)
+		+r(767)
+			+fs(20)
 
 .product__price
-	+helveticaTG
+	+LTWultra
 	display: block
 	+fs(36)
 	color: #FFF
 	font-weight: 100
+	margin-top: 45px
+	+r(767)
+		+fs(28)
 
 .product__pic
+	margin-bottom: -36px
 	+r(991)
-		margin: 50px 0 -36px
+		margin: 45px 0 -36px
 
 .product__about
 	p
 		+fs(18)
 		color: #656565
 		margin: 30px 0
+		&:last-child
+			margin-bottom: 0
+		+r(767)
+			+fs(16)
 
 .product__spec-table
 	margin-right: 50px
 	+r(1200)
 		margin-right: 0
-	.title
-		margin-bottom: 35px
 	.tr
 		font-size: 0
 	.td
@@ -418,16 +539,51 @@ a
 		line-height: 1.215
 		color: #656565
 		padding: 16px 20px 16px 0
+		+r(767)
+			display: block
+			width: auto
+			+box
+			&:last-child
+				margin-left: 20px
+				padding: 0 0 10px
 		&:first-child
 			width: 40%
 			color: #000
+			+r(767)
+				padding: 10px 0 0
+				width: auto
+				margin-bottom: 5px
 		&.separator
 			width: 100%
 			div
 				height: 1px
 				background: #999
+			+r(767)
+				margin: 0 0 10px
 
+.download
+	display: block
+	margin: 25px 0 0
+	+fs(18)
+	line-height: 1.22
+	+r(767)
+		+fs(16)
+	span
+		display: inline-block
+		vertical-align: middle
+	.file
+		display: inline-block
+		vertical-align: middle
+		margin-right: 20px
+		+svg(file-doc, 30, 38)
+		&.pdf
+			+svg(file-pdf, 30, 38)
+		&.zip
+			+svg(file-zip, 30, 38)
 
+.downloads
+	.download
+		margin-top: 0
 
 
 

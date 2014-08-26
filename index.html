@@ -4,8 +4,6 @@
 	<meta charset="utf-8">
 	<title>Template</title>
 	<meta name="viewport" content="initial-scale=1"/>
-	<!-- <meta name="viewport" content="width=1200"> -->
-	<!-- <link rel="stylesheet" media="screen" href="css/bootstrap-theme.css" > -->
 	<link rel="stylesheet" media="screen" href="css/bootstrap.css" >
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
@@ -14,47 +12,27 @@
 <!-- BEGIN header -->
 <header class="header">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<a href="#" class="logo"><span>Unite Control</span></a>
-				<nav class="nav js-menu-to-show">
-					<ul class="nav__list js-nav">
-						<li>
-							<a href="#">Решения</a>
-							<ul class="nav__sub js-subnav">
-								<li><a href="#">subitem</a></li>
-								<li><a href="#">subitem</a></li>
-								<li><a href="#">subitem</a></li>
-								<li><a href="#">subitem</a></li>
-								<li><a href="#">subitem</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Преимущества</a></li>
-						<li><a href="#">Апп</a></li>
-						<li><a href="#">Устройства</a></li>
-						<li><a href="#">Контакты</a></li>
-						<li><a href="#">Блог</a></li>
-					</ul>
-					<ul class="lang">
-						<a href="#" class="is-active">рус</a> /
-						<a href="#">eng</a>
-					</ul>
-					<a href="#" class="button button_header">Предзаказ</a>
-				</nav>
-				<div class="menu-btn js-show-menu"></div>
-			</div>
-		</div>
+		<a href="#" class="logo"><span>Unite Control</span></a>
+		<nav class="nav js-menu-to-show">
+			<ul class="nav__list js-nav">
+				<li><a href="#">Устройства</a></li>
+				<li><a href="#">UC Hub</a></li>
+			</ul>
+			<a href="#" class="lang lang_ru">RU <i>&#59236;</i></a>
+			<a href="#" class="button button_header">Предзаказ</a>
+		</nav>
+		<div class="menu-btn js-show-menu"></div>
 	</div>
 </header>
 <!-- END header -->
 
 <!-- BEGIN promo -->
-<div class="promo" style="background-image: url('img/promo.jpg')">
+<div class="promo">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<h1 class="promo__title">Мониторинг ресурсов<br>и оборудования</h1>
-				<h2 class="promo__title promo__title_sub">Дешевле существующих решений.<br>Легкий и удобный в использовании.</h2>
+				<p class="promo__title promo__title_sub">Дешевле существующих решений.<br>Легкий и удобный в использовании.</p>
 				<div class="promo__right"><img src="img/hand-iphone.png"></div>
 			</div>
 		</div>
@@ -65,26 +43,25 @@
 <!-- BEGIN wrap -->
 <div class="wrap wrap_gray">
 	<div class="container">
+		<h3 class="title title_margin">Кто использует наши решения?</h3>
 		<div class="row">
-			<div class="col-md-12">
-				<h3 class="title">Кто использует наши решения?</h3>
-			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4 b-text">
+			<div class="col-md-4 b-text col-margin-bottom">
 				<strong class="b-text__title">Инсталляторы</strong>
 				<p><a href="#">UC HVAC</a> позволяет удаленно мониторить параметры работы оборудования и жилых помещений, выявлять аварии и диагностировать оборудование с меньшими затратами денег и времени.</p>
-				<a href="#" class="button">Скачать презентацию</a>
+				<a class="download" href="#"><i class="file pdf"></i><span>Скачать презентацию</span></a>
 			</div>
-			<div class="col-md-4 b-text">
+			<div class="col-md-4 b-text col-margin-bottom">
 				<strong class="b-text__title">Мобильные операторы</strong>
 				<p><a href="#">UC M2M</a> позволяет мониторить потребление ресурсов, производить биллинг потребителей, принимать платежи через мобильное приложение.</p>
-				<a href="#" class="button">Скачать презентацию</a>
+				<a class="download" href="#"><i class="file pdf"></i><span>Как это работает?</span></a>
+				<a class="download" href="#"><i class="file pdf"></i><span>Скачать презентацию</span></a>
 			</div>
 			<div class="col-md-4 b-text">
 				<strong class="b-text__title">Компании сектора ЖКХ</strong>
 				<p><a href="#">UC Building</a> позволяет мониторить потребление ресурсов конечными потребителями, выставлять счета к оплате, принимать платежи, экономить ресурсы и повышать уровень сервиса.</p>
-				<a href="#" class="button">Скачать презентацию</a>
+				<a class="download" href="#"><i class="file pdf"></i><span>Скачать презентацию</span></a>
 			</div>
 
 		</div>
@@ -95,6 +72,7 @@
 <!-- BEGIN wrap -->
 <div class="wrap">
 	<div class="container">
+		<h3 class="title title_margin">Как всё это работает?</h3>
 		<div class="row">
 			<div class="col-md-12 visible-lg visible-md visible-sm">
 				<div class="how-it-works"><img src="img/svg/how-it-works.svg" alt="Как всё это работает?"></div>
@@ -107,18 +85,11 @@
 </div>
 <!-- END wrap -->
 
-<!-- BEGIN wrap -->
-<div class="wrap wrap_gray">
+<!-- BEGIN advantages -->
+<div class="wrap wrap_gray advantages">
 	<div class="container">
+		<h3 class="title title_margin">Преимущества нашей технологии</h3>
 		<!-- BEGIN row1 -->
-		<div class="row">
-			<div class="col-md-12">
-				<h3 class="title">Преимущества нашей технологии</h3>
-			</div>
-		</div>
-		<!-- END row1 -->
-
-		<!-- BEGIN row2 -->
 		<div class="row">
 			<div class="col-md-4 b-text">
 				<strong class="b-text__title">Низкая стоимость</strong>
@@ -133,9 +104,9 @@
 				<p>UC поддерживает любые счетчики, у которых есть импульсный выход. Вам не нужно покупать новые счетчики, можно ставить нашу систему в существующие дома.</p>
 			</div>
 		</div>
-		<!-- END row2 -->
+		<!-- END row1 -->
 
-		<!-- BEGIN row3 -->
+		<!-- BEGIN row2 -->
 		<div class="row">
 			<div class="col-md-4 b-text">
 				<strong class="b-text__title">Мобильный интерфейс</strong>
@@ -150,9 +121,9 @@
 				<p>Вся информация хранится в облаке, вам не нужно покупать и настраивать дорогие сервера, не нужно нанимать дополнительных сотрудников.</p>
 			</div>
 		</div>
-		<!-- END row3 -->
+		<!-- END row2 -->
 
-		<!-- BEGIN row4 -->
+		<!-- BEGIN row3 -->
 		<div class="row">
 			<div class="col-md-4 b-text">
 				<strong class="b-text__title">Гибкая система нотификаций</strong>
@@ -167,20 +138,20 @@
 				<p>Вы можете накладывать графики друг на друга, что позволяет быстро находить зависимости и выяснять причины поведения сложных систем.</p>
 			</div>
 		</div>
-		<!-- END row4 -->
+		<!-- END row3 -->
 	</div>
 </div>
-<!-- END wrap -->
+<!-- END advantages -->
 
 <!-- BEGIN footer -->
 <footer class="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">
-				<a href="#" class="logo logo_footer"><span>&copy Unite Control 2013</span></a>
+				<span class="copy">&copy Unite Control 2013</span>
 			</div>
 			<div class="col-md-4">
-				<a href="mailt:mail@unitecontrol.com" class="footer__email">mail@unitecontrol.com</a>
+				<a class="footer__email" href="mailto:mail@unitecontrol.com">mail@unitecontrol.com</a>
 			</div>
 			<div class="col-md-4">
 				<ul class="footer__tel">

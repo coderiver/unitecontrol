@@ -1,7 +1,7 @@
 head.ready(function() {
 
-	var    navItem = $('.js-nav'),
-			subNav = navItem.find('.js-subnav'),
+	var navItem    = $('.js-nav'),
+		subNav     = navItem.find('.js-subnav'),
 		menuButton = $('.js-show-menu'),
 		menuToShow = $('.js-menu-to-show');
 
