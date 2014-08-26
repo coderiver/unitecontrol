@@ -81,6 +81,7 @@ a:hover { text-decoration: none; }
 .button.button_header { min-width: 167px; position: relative; top: 2px; margin-top: 0; }
 @media only screen and (max-width: 1200px) { .button.button_header { min-width: 50px; padding: 0 15px; } }
 @media only screen and (max-width: 991px) { .button.button_header { display: block; position: static; width: 100%; margin: 20px 0 40px; } }
+.button.button_download { min-width: 240px; margin-top: 25px; }
 
 .promo { background: #5f747d url("../img/promo.jpg") 100% 0 no-repeat; min-height: 460px; position: relative; overflow: hidden; -webkit-transition: 0.2s linear; -moz-transition: 0.2s linear; -o-transition: 0.2s linear; transition: 0.2s linear; }
 @media only screen and (max-width: 767px) { .promo { background: #5f747d; min-height: 1px; } }
@@ -106,6 +107,7 @@ a:hover { text-decoration: none; }
 
 .b-text p { font-size: 18px; font-size: 1.8rem; color: #666666; }
 @media only screen and (max-width: 767px) { .b-text p { font-size: 16px; font-size: 1.6rem; } }
+.b-text b { font-weight: normal; color: black; }
 
 .b-text__title { display: block; font-size: 24px; font-size: 2.4rem; margin-bottom: 15px; }
 @media only screen and (max-width: 767px) { .b-text__title { font-size: 21px; font-size: 2.1rem; } }
