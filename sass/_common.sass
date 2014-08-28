@@ -110,7 +110,7 @@ a
 	text-align: left
 	+fs(23)
 	+r(991)
-		float: none
+		// float: none
 		+fs(17)
 	&:hover
 		color: #000
@@ -505,9 +505,13 @@ a
 		+fs(28)
 
 .product__pic
-	margin-bottom: -36px
+	display: block
+	margin: 0 auto
+	// margin-bottom: -36px //if img is *.svg from path img/svg
+	margin-bottom: -50px
+	max-width: 100%
 	+r(991)
-		margin: 45px 0 -36px
+		margin-top: 45px
 
 .product__about
 	p

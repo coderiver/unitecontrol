@@ -39,7 +39,7 @@ a:hover { text-decoration: none; }
 .header .container { position: relative; }
 
 .logo { display: block; float: left; font-size: 0; text-decoration: none; color: black; text-decoration: none; text-align: left; font-size: 23px; font-size: 2.3rem; }
-@media only screen and (max-width: 991px) { .logo { float: none; font-size: 17px; font-size: 1.7rem; } }
+@media only screen and (max-width: 991px) { .logo { font-size: 17px; font-size: 1.7rem; } }
 .logo:hover { color: black; text-decoration: none; }
 .logo:before { content: ""; background: url("../img/svg/logo.svg") no-repeat 0 0; -moz-background-size: 48px 48px 100%; -webkit-background-size: 48px 48px 100%; background-size: 48px 48px 100%; width: 48px; height: 48px; display: inline-block; vertical-align: middle; }
 @media only screen and (max-width: 991px) { .logo:before { width: 36px; height: 36px; } }
@@ -172,8 +172,8 @@ a:hover { text-decoration: none; }
 .product__price { font-family: "HelveticaNeueLTW1G-UltLt", Arial; font-weight: normal; display: block; font-size: 36px; font-size: 3.6rem; color: white; font-weight: 100; margin-top: 45px; }
 @media only screen and (max-width: 767px) { .product__price { font-size: 28px; font-size: 2.8rem; } }
 
-.product__pic { margin-bottom: -36px; }
-@media only screen and (max-width: 991px) { .product__pic { margin: 45px 0 -36px; } }
+.product__pic { display: block; margin: 0 auto; margin-bottom: -50px; max-width: 100%; }
+@media only screen and (max-width: 991px) { .product__pic { margin-top: 45px; } }
 
 .product__about p { font-size: 18px; font-size: 1.8rem; color: #656565; margin: 30px 0; }
 .product__about p:first-child { margin-top: 0; }
