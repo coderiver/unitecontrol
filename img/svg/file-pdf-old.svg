@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 38" enable-background="new 0 0 30 38" xml:space="preserve">
+<font horiz-adv-x="1000">
+<!-- Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#xA9; 2008 - 2009 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be reproduced, used, displayed, modified, disclosed or transferred without the express written approval of Linotype GmbH.  The digitally encoded machine readable software for producing the Typefaces licensed to you is copyrighted (c) 1988, 1990, 1993 Adobe Systems. All Rights Reserved. This software is the property of Adobe Systems Incorporated and its licensors, and may not be reproduced, used, displayed, modified, disclosed or transferred without the express written approval of Adobe. Helvetica is a trademark of Linotype Corp. registered in the U.S. Patent and Trademark Office and may be registered in certain other jurisdictions in the name of Linotype Corp. or its licensee Linotype GmbH. This typeface is original artwork of Linotype Design Studio. The design may be protected in certain jurisdictions. -->
+<font-face font-family="HelveticaNeueLTW1G-Roman" units-per-em="1000" underline-position="-100" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="512" d="M0,0l0,718l512,0l0,-718M50,50l412,0l0,617l-412,0M225,234l-2,17C223,288 227,315 236,332C245,349 260,369 282,391C325,432 332,449 332,474C332,522 297,559 256,559C215,559 182,532 174,464l-50,8C133,567 187,609 259,609C330,609 383,557 383,478C383,435 371,405 320,358C295,336 281,319 277,306C273,293 271,269 271,234M222,117l0,67l56,0l0,-67z"/>
+<glyph unicode="D" horiz-adv-x="704" d="M78,0l245,0C561,0 666,135 666,374C666,603 543,714 323,714l-245,0M173,80l0,554l160,0C508,634 571,531 571,361C571,98 396,80 331,80z"/>
+<glyph unicode="F" horiz-adv-x="574" d="M78,0l95,0l0,327l328,0l0,80l-328,0l0,227l374,0l0,80l-469,0z"/>
+<glyph unicode="P" horiz-adv-x="648" d="M78,0l95,0l0,292l218,0C534,291 610,370 610,503C610,636 534,714 391,714l-313,0M173,634l186,0C467,634 515,588 515,503C515,418 467,371 359,372l-186,0z"/>
+</font>
+
+	<g>
+	<g>
+		<g>
+			<g>
+				<path fill="#0096FF" d="M19,2c0.6,0,1.6,0.4,2,0.8L27.2,9c0.4,0.4,0.8,1.4,0.8,2v25H2V2H19 M19,0H2C0.9,0,0,0.9,0,2v34
+					c0,1.1,0.9,2,2,2h26c1.1,0,2-0.9,2-2V11c0-1.1-0.6-2.6-1.4-3.4l-6.2-6.2C21.6,0.6,20.1,0,19,0L19,0z"/>
+			</g>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 4 24.4287)" fill="#0096FF" font-family="'HelveticaNeueLTW1G-Roman'" font-size="10">PDF</text>
+		</g>
+	</g>
+</g>
+</svg>

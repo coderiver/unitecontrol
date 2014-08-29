@@ -22,7 +22,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 @font-face { font-family: "HelveticaNeueLTW1G-UltLt"; src: url("../fonts/HelveticaNeueLTW1G-UltLt.eot"); src: url("../fonts/HelveticaNeueLTW1G-UltLt.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueLTW1G-UltLt.woff") format("woff"), url("../fonts/HelveticaNeueLTW1G-UltLt.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: "Entypo"; src: url("../fonts/Entypo.eot"); src: url("../fonts/Entypo.eot?#iefix") format("embedded-opentype"), url("../fonts/Entypo.woff") format("woff"), url("../fonts/Entypo.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "entypo"; src: url("../fonts/entypo.eot"); src: url("../fonts/entypo.eot?#iefix") format("embedded-opentype"), url("../fonts/entypo.woff") format("woff"), url("../fonts/entypo.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
 html { font-size: 62.5%; }
 
@@ -74,7 +74,7 @@ a:hover { text-decoration: none; }
 .lang.lang_ru:before { background: url("../img/svg/lang-ru.svg") no-repeat 0 0; -moz-background-size: 26px 18px 100%; -webkit-background-size: 26px 18px 100%; background-size: 26px 18px 100%; width: 26px; height: 18px; display: inline-block; }
 .lang.lang_en:before { background: url("../img/svg/lang-en.svg") no-repeat 0 0; -moz-background-size: 26px 18px 100%; -webkit-background-size: 26px 18px 100%; background-size: 26px 18px 100%; width: 26px; height: 18px; display: inline-block; }
 .lang.lang_pl:before { background: url("../img/svg/lang-pl.svg") no-repeat 0 0; -moz-background-size: 26px 18px 100%; -webkit-background-size: 26px 18px 100%; background-size: 26px 18px 100%; width: 26px; height: 18px; display: inline-block; }
-.lang i { font-size: 27px; font-size: 2.7rem; font-family: "Entypo"; font-weight: normal; font-style: normal; line-height: 1; }
+.lang i { font-size: 27px; font-size: 2.7rem; font-family: "entypo"; font-weight: normal; font-style: normal; line-height: 1; }
 
 .button { display: inline-block; font-size: 18px; font-size: 1.8rem; background: #00b200; color: white; text-align: center; line-height: 34px; padding: 0 30px; border-bottom: 2px solid #009900; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .button:hover { background: #008900; border-color: #005c00; color: white; text-decoration: none; }

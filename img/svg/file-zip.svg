@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 30 38" enable-background="new 0 0 30 38" xml:space="preserve">
-<font horiz-adv-x="1000">
-<!-- Copyright 1992, 1994, 1997, 2000, 2004 Adobe Systems Incorporated. All rights reserved. Myriad is either a registered trademark or a trademark of Adobe Systems Incorporated in the United States and/or other countries. -->
-<font-face font-family="HelveticaNeueLTW1G-Roman" units-per-em="1000" underline-position="-100" underline-thickness="50"/>
-<missing-glyph horiz-adv-x="500" d="M0,0l500,0l0,700l-500,0M250,395l-170,255l340,0M280,350l170,255l0,-510M80,50l170,255l170,-255M50,605l170,-255l-170,-255z"/>
-<glyph unicode="I" horiz-adv-x="239" d="M76,674l0,-674l87,0l0,674z"/>
-<glyph unicode="P" horiz-adv-x="532" d="M76,0l87,0l0,270C183,265 207,264 233,264C318,264 393,289 439,338C473,373 491,421 491,482C491,542 469,591 432,623C392,659 329,679 243,679C173,679 118,673 76,666M163,603C178,607 207,610 245,610C341,610 404,567 404,478C404,385 340,334 235,334C206,334 182,336 163,341z"/>
-<glyph unicode="Z" horiz-adv-x="553" d="M30,0l492,0l0,73l-377,0l0,3l372,545l0,53l-455,0l0,-73l342,0l0,-3l-374,-547z"/>
-</font>
-
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="30px" height="38px" viewBox="0 0 30 38" enable-background="new 0 0 30 38" xml:space="preserve">
+<g>
+	<path fill="#0096FF" d="M19,2c0.569,0,1.598,0.425,2,0.828L27.171,9C27.574,9.403,28,10.431,28,11v25H2V2H19 M19,0H2
+		C0.9,0,0,0.9,0,2v34c0,1.1,0.9,2,2,2h26c1.1,0,2-0.9,2-2V11c0-1.1-0.637-2.636-1.414-3.414l-6.172-6.172C21.637,0.636,20.1,0,19,0
+		L19,0z"/>
+</g>
+<g>
 	<g>
-	<g>
-		<g>
-			<path fill="#0096FF" d="M19,2c0.6,0,1.6,0.4,2,0.8L27.2,9c0.4,0.4,0.8,1.4,0.8,2v25H2V2H19 M19,0H2C0.9,0,0,0.9,0,2v34
-				c0,1.1,0.9,2,2,2h26c1.1,0,2-0.9,2-2V11c0-1.1-0.6-2.6-1.4-3.4l-6.2-6.2C21.6,0.6,20.1,0,19,0L19,0z"/>
-		</g>
-	</g>
-	<g>
-		
-			<text transform="matrix(1 0 0 1 5.9998 24.4287)" fill="#0096FF" font-family="'HelveticaNeueLTW1G-Roman'" font-size="10" letter-spacing="1">ZIP</text>
+		<path fill="#0096FF" d="M6.63,22.513l4.438-5.537H6.97v-0.799h5.217v0.799l-4.428,5.537h4.548v0.8H6.63V22.513z"/>
+		<path fill="#0096FF" d="M14.339,16.177h0.95v7.136h-0.95V16.177z"/>
+		<path fill="#0096FF" d="M17.89,16.177h3.128c1.43,0,2.189,0.779,2.189,2.108s-0.76,2.119-2.189,2.109h-2.179v2.918H17.89V16.177z
+			 M18.839,19.595h1.858c1.08,0.01,1.56-0.46,1.56-1.31s-0.479-1.31-1.56-1.31h-1.858V19.595z"/>
 	</g>
 </g>
 </svg>
