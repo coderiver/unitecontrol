@@ -68,6 +68,8 @@ $text: #666
 	font-weight: normal
 	font-style: normal
 
++font("UC-Icons", UC-Icons)
+
 
 html
 	font-size: 62.5%
@@ -109,7 +111,7 @@ a
 	text-decoration: none
 	text-align: left
 	+fs(23)
-	+r(991)
+	+r(767)
 		// float: none
 		+fs(17)
 	&:hover
@@ -119,7 +121,7 @@ a
 		content: ""
 		+svg(logo, 48, 48)
 		vertical-align: middle
-		+r(991)
+		+r(767)
 			width: 36px
 			height: 36px
 	span
@@ -144,7 +146,7 @@ a
 	+transition(all 0.2s linear)
 	&.is-active
 		+svg(menu-active, 36, 36)
-	+r(991)
+	+r(767)
 		display: inline-block
 
 
@@ -154,7 +156,7 @@ a
 	line-height: 48px
 	color: $blue
 	text-align: left
-	+r(991)
+	+r(767)
 		display: none
 		width: 100%
 		padding: 15px
@@ -165,7 +167,7 @@ a
 		z-index: 10
 		background: #fff
 		line-height: 1.2
-	+rmin(992)
+	+rmin(768)
 		display: inline-block !important
 
 .nav__list
@@ -179,7 +181,7 @@ a
 		+fs(18)
 		+r(1200)
 			margin-right: 15px
-	+r(991)
+	+r(767)
 		display: block
 		li
 			display: block
@@ -196,7 +198,7 @@ a
 	li
 		display: block
 		margin-right: 0
-	+r(991)
+	+r(767)
 		position: static
 		background: #D8D8D8
 		margin: 0 -15px
@@ -216,7 +218,7 @@ a
 		color: #666
 		&.is-active
 			color: $blue
-	+r(991)
+	+r(767)
 		display: block
 		margin-right: 0
 	&:before
@@ -264,7 +266,7 @@ a
 		+r(1200)
 			min-width: 50px
 			padding: 0 15px
-		+r(991)
+		+r(767)
 			display: block
 			position: static
 			width: 100%
@@ -351,6 +353,7 @@ a
 .b-text__title
 	display: block
 	+fs(24)
+	font-weight: normal
 	margin-bottom: 15px
 	+r(767)
 		+fs(21)
